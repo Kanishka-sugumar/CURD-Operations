@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       CRUD OPERATIONS FOR STUDENT DETAILS
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <style>
+      body{
+        background-image: linear-gradient(#614385,#516395);
+      }
+   </style>
+	<h1><center>CRUD OPERATIONS FOR STUDENT DETAILS</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email Id</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Roll Number</label>
+                        <input type="text" name="roll" id="roll">
+                    </div>
+                    <div>
+                        <label>X</label>
+                        <input type="text" name="mark1" id="mark1">
+                    </div>
+                    <div>
+                        <label>XII</label>
+                        <input type="text" name="mark2" id="mark2">
+                    </div>
+                    <div>
+                        <label>CGPA</label>
+                        <input type="text" name="cgpa" id="cgpa">
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label>Contact Number</label>
+                        <input type="text" name="conumber" id="conumber">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email Id</th>
+                            <th>Roll Number</th>
+                            <th>X</th>
+                            <th>XII</th>
+                            <th>CGPA</th>
+                            <th>City</th>                            
+                            <th>Contact Number</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
